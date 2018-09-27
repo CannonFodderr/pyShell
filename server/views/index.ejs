@@ -1,10 +1,13 @@
 <% include ./partials/header %>
 <div id="main_container">
     <h1><%= title %></h1>
-    
+    <form id="urlform" name="urlform" action="/" method="POST">
+        <input name="inputURL" type="text" placeholder="Paste a url">
+        <input id="urlSubmit" type="submit" value="scrape">
+    </form>
     <ul>
         <% pyData.forEach(item => { %>
-            <li><%=item%></li>
+            <img class="scraped_img" src="<%=item%>" alt="">
         <%})%>
     </ul>
 </div>

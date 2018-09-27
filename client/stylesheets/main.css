@@ -14,3 +14,7 @@ html, body{
     min-height: 100vh;
     min-width: 100vw;
 }
+
+.scraped_img{
+    max-width: 25%;
+}
